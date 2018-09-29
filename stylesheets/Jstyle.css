@@ -1,0 +1,322 @@
+
+body{
+  font-family: arial, Helvetica, sans-serif;
+  font-size:15px;
+  line-height:1.5;
+  /* font: 15px/1.5 arial, Helvetica, sans-serif; */
+  padding:0;
+  background-color:white;
+}
+/* global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height: 38px;
+  background:#00BFA5;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+  border: none;
+  /* border-radius: 25px; */
+  /* border: 1px solid white; */
+}
+
+/* .dark{
+  padding: 15px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+} */
+
+/*  -------------------------------------------------header----------------------------------------------------*/
+header{
+  background: white;
+  color:black;
+  padding-top:30px;
+  min-height: 70px;
+  border-bottom:#00BFA5 4px solid;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 20px;
+
+}
+header a{
+  color:#ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+
+header li{
+  float:left;
+  display:inline-flex;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:center;
+}
+
+header #branding h1{
+  margin:0;
+  float:left;
+
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a{
+  color: #00BFA5;
+  font-weight:bold;
+  text-align: center;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+header a{
+  color: black;
+  font-style: bold;
+}
+
+/*  ------------------------------------------------showcase with image----------------------------------------------------*/
+/* showcase */
+#showcase{
+  min-height: 500px;
+
+  background:url('../img/bridge.jpeg') ;
+  background-size: cover;
+  border: black;
+  text-align: center;
+  color: white;
+
+}
+
+#showcase h1{
+  margin-top:190px;
+  font-size: 53px;
+  text-shadow: 2px 2px #00BFA5;
+}
+
+#showcase p{
+  font-size:20px;
+
+}
+/*  -------------------------------------------------Subscribe to newsletter part----------------------------------------------------*/
+#newsletter{
+  padding: 15px;
+  color:#ffffff;
+  background:#546E7A;
+
+}
+
+#newsletter h1{
+  float:left;
+
+}
+
+#newsletter form{
+  float:right;
+  margin-top: 15px;
+
+}
+
+#newsletter input[type='email']{
+  padding:4px;
+  height:25px;
+  width: 250px;
+}
+
+
+/*  ------------------------------------------------Boxes with gifs part----------------------------------------------------*/
+#boxes{
+  margin-top: 20px;
+}
+
+#boxes .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#boxes .box{
+  float: left;
+  text-align: center;
+  width: 20%;
+  padding: 10px;
+
+}
+
+#boxes .box{
+  /* width:90px;
+  height:90px; */
+  text-align: center;
+}
+/*  -------------------------------------------------Forgot what this is----------------------------------------------------*/
+aside #sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+/* main-col  */
+article #maincol{
+  float: left;
+  width:65%;
+}
+
+/*  --------------------------------------------footer-------------------------------------------------------------------*/
+footer{
+  padding:20px;
+  margin-top: 20px;
+  color:white;
+  background-color: #212121;
+  text-align: center;
+}
+
+/*  -------------------------------------------------css for grid on after login----------------------------------------------------*/
+.grid-container1 {
+  display: grid;
+  grid-template-areas:
+    'cam cam cam cam '
+    'pm pm um um'
+    'mpp mpp mpp mpp';
+  grid-gap: 3px;
+  background-color: black;
+  padding: 3px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 20px;
+}
+
+.grid-container1 > a {
+  background-color: #E0F2F1;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.itema { grid-area: pm; }
+.itemb { grid-area: um; }
+.itemc { grid-area: cam; }
+.itemd { grid-area: mpp; }
+
+.itema:hover {
+  background-color: #00BFA5;
+}
+.itemb:hover {
+  background-color: #00BFA5;
+}
+.itemc:hover {
+  background-color: #00BFA5;
+}
+.itemd:hover {
+  background-color: #00BFA5;
+}
+
+/*  -------------------------------------------------css for grid on the meet----------------------------------------------------*/
+.item1 { grid-area: event; }
+.item2 { grid-area: date; }
+.item3 { grid-area: time; }
+.item4 { grid-area: people; }
+.item5 { grid-area: place; }
+.item6 { grid-area: votep; }
+.item7 { grid-area: place1; }
+.item8 { grid-area: place2; }
+.item9 { grid-area: place3; }
+.item10 { grid-area: place4; }
+.item11 { grid-area: save; }
+
+.item1:hover {
+  background-color: #00BFA5;
+}
+.item2:hover {
+  background-color: #00BFA5;
+}
+.item3:hover {
+  background-color: #00BFA5;
+}
+.item4:hover {
+  background-color: #00BFA5;
+}
+.item5:hover {
+  background-color: #00BFA5;
+}
+.item6:hover {
+  background-color: #00BFA5;
+}
+.item7:hover {
+  background-color: #00BFA5;
+}
+.item8:hover {
+  background-color: #00BFA5;
+}
+.item9:hover {
+  background-color: #00BFA5;
+}
+.item10:hover {
+  background-color: #00BFA5;
+}
+.item11:hover {
+  background-color: #00BFA5;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'event event event event'
+    'date date time time'
+    'people people people people'
+    'place place place place'
+    'votep votep votep votep'
+    'place1 place2 place3 place4'
+    'save save save save';
+  grid-gap: 3px;
+  background-color: black;
+  padding: 3px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 20px;
+}
+
+.grid-container > a {
+  background-color: #DCEDC8;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: inherit;
+  text-decoration: none;
+}
+
+#meetUpForm{
+  height:auto;
+   margin:0 auto;
+   text-align: center;
+}
+#meetUpForm input{
+  margin: 5px auto;
+}

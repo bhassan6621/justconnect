@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> ALL YOUR UPCOMING MEETUPS </h1>
+
+    {% if UpComingList_len > 0 %}
+        {% for upComingMU in upComingMU_list %}
+            <p>{{upComingMU.UserEmail}}  < name: {{upComingMU.dbMeetUpName}} date: {{upComingMU.dbMeetUpDate}} time: {{upComingMU.dbMeetUpTime}} place: {{upComingMU.dbMeetUpPlace}} ></p>
+        {% endfor %}
+    {% endif %}
+
+    <br>
+    <h1> ALL YOUR PREVIOUS MEETUPS </h1>
+
+    {% if PreviousList_Len > 0 %}
+      {% for PreviousMU in previousMU_list %}
+          <p>{{PreviousMU.UserEmail}}  < name: {{PreviousMU.dbMeetUpName}} date: {{PreviousMU.dbMeetUpDate}} time: {{PreviousMU.dbMeetUpTime}} place: {{PreviousMU.dbMeetUpPlace}} ></p>
+      {% endfor %}
+    {% endif %}
+
+ <!-- THIS PRINTS ALL THE MEET UPS!
+    {% for meetUpAndPeople in MeetUpAndPeople_list %}
+        {% for meetUp in MeetUp_list %}
+            {% if meetUp.key == meetUpAndPeople.dbMeetUpId %}
+                {% for user in user_list %}
+                   {% if user.UserID == user_key %}
+                      {% if user.key == meetUpAndPeople.dbPeopleId %}
+                         <p>{{user.UserEmail}}  < name: {{meetUp.dbMeetUpName}} date: {{meetUp.dbMeetUpDate}} time: {{meetUp.dbMeetUpTime}} place: {{meetUp.dbMeetUpPlace}}  ></p>
+                         <hr>
+                      {% endif %}
+                   {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+  -->
+
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content"width=device-width">
+    <title>Connectify | User Page</title>
+    <style>
+      header{
+        background: white;
+        color:black;
+        padding-top:30px;
+        min-height: 70px;
+        border-bottom:#00BFA5 4px solid;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        font-size: 20px;
+
+      }
+      header a{
+        color:#ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+
+
+      header li{
+        float:left;
+        display:inline-flex;
+        padding: 0 20px 0 20px;
+      }
+
+      header #branding{
+        float:center;
+      }
+
+      header #branding h1{
+        margin:0;
+        float:left;
+
+      }
+
+      header nav{
+        float: right;
+        margin-top: 10px;
+      }
+
+      header .highlight, header .current a{
+        color: #00BFA5;
+        font-weight:bold;
+        text-align: center;
+      }
+
+      header a:hover{
+        color:#cccccc;
+        font-weight:bold;
+      }
+
+      header a{
+        color: black;
+        font-style: bold;
+      }
+
+
+      * {box-sizing: border-box;}
+      ul {list-style-type: none;}
+      body {font-family: Verdana, sans-serif;}
+      #divContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .UCMeetUp{
+        border-style: solid;
+        text-align: center;
+        margin: 15px 15px 15px 15px
+      }
+
+      footer{
+        padding:20px;
+        margin-top: 20px;
+        color:white;
+        background-color: #212121;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1> <span class="highlight">Just</span> Connect </h1>
+          <nav>
+            <ul>
+              <li class="current"><a href="/">Home</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+
+    <div class="Requests">
+  <h1>Previous Events:</h1>
+    </div>
+
+
+  <div id="divContainer">
+    {% if PreviousList_Len > 0 %}
+      {% for PreviousMU in previousMU_list %}
+        <div class="UCMeetUp">
+          <h3>name: {{PreviousMU.dbMeetUpName}}</h3>
+          <h4>date: {{PreviousMU.dbMeetUpDate}}</h4>
+          <h4>time: {{PreviousMU.dbMeetUpTime}}</h4>
+          <h4>place: {{PreviousMU.dbMeetUpPlace}} </h4>
+        </div>
+      {% endfor %}
+    {% endif %}
+</div>
+
+<br> <br><br>
+  <footer>
+  <p>A project by CSSI | JFB , Copyright &copy; 2018</p>
+  </footer>
+
+  </body>
+</html>

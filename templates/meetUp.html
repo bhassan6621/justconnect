@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content"width=device-width">
+    <title>Connectify | User Page</title>
+    <link rel="stylesheet" href="./stylesheets/Jstyle.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1> <span class="highlight">Just</span> Connect </h1>
+          <nav>
+            <ul>
+              <li class="current"><a href="/">Home</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <h1>MeetUp Page</h1>
+
+    <form id ="theForm" method=post action="/meetUp">
+      <div id = "meetUpForm">
+        Meet Up Title: <input type="text" name="meetUp_name" ><br>
+        Date: <input type="date" name="meetUp_date" ><br>
+        Time: <input type="time" name="meetUp_time" ><br>
+        Place: <input type="text" name="meetUp_place"><br>
+        Add Friends: <input type="text" name="meetUp_Friends"> <br>
+        <a href= "/upComingMeetUp"><input type="submit" name="" value="submit"></a>
+      </div>
+    </form>
+    <br>
+    <a href={{SignOut}}>Sign Out</a>
+
+    <footer>
+    <p>A project by CSSI | JFB , Copyright &copy; 2018</p>
+    </footer>
+  </body>
+</html>
